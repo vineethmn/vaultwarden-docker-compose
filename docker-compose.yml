@@ -9,6 +9,7 @@ services:
     volumes:
      - ./bitwarden:/data:rw
     environment:
+     - ADMIN_TOKEN=${ADMIN_TOKEN}
      - WEBSOCKET_ENABLED=true
      - SIGNUPS_ALLOWED=false
      - SMTP_HOST=${SMTP_HOST}
