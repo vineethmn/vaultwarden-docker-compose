@@ -1,0 +1,25 @@
+version: "3"
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: unless-stopped
+    ports:
+     - 8445:80 #map any custom port to use (replace 8445 not 80)
+    volumes:
+     - ./bitwarden:/data:rw
+    environment:
+     - WEBSOCKET_ENABLED=true
+     - SIGNUPS_ALLOWED=false
+     - SMTP_HOST=${SMTP_HOST}
+     - SMTP_FROM=${SMTP_FROM}
+     - SMTP_PORT=${SMTP_PORT}
+     - SMTP_SSL=${SMTP_SSL}
+     - SMTP_USERNAME=${SMTP_USERNAME}
+     - SMTP_PASSWORD=${SMTP_PASSWORD}
+     - DOMAIN=${DOMAIN}
+
+networks:
+  default:
+    external:
+      name: nginx-proxy-network
