@@ -14,3 +14,5 @@ Note : edit .env and config.json file with your parameters
 
 
 All documents can be found here : @https://github.com/dani-garcia/vaultwarden/wiki
+
+Blog post can be found here: https://geekscircuit.com/password-manager/
