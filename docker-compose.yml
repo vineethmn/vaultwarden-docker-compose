@@ -20,7 +20,8 @@ services:
      - SMTP_PASSWORD=${SMTP_PASSWORD}
      - DOMAIN=${DOMAIN}
 
-networks:
-  default:
-    external:
-      name: nginx-proxy-network
+#uncomment below network part if you are using Nginx Proxy Manager, or you can remove the same
+#networks:
+#  default:
+#    external:
+#      name: nginx-proxy-network
