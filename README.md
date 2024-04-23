@@ -34,7 +34,13 @@ This repository provides a Docker Compose configuration for setting up a self-ho
 
     Keep this token secret as it will be used as the password to access the admin area of your server.
 
-5. Follow the instructions in the [Vaultwarden Wiki](https://github.com/dani-garcia/vaultwarden/wiki) for additional configuration and usage details.
+5. Bring the `vaultwarden` container up
+
+    ```bash
+    docker compose up -d
+    ```
+   
+6. Follow the instructions in the [Vaultwarden Wiki](https://github.com/dani-garcia/vaultwarden/wiki) for additional configuration and usage details.
 
 ## Security Note
 
