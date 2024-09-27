@@ -24,7 +24,7 @@ This repository provides a Docker Compose configuration for setting up a self-ho
     cd vaultwarden-docker-compose
     ```
 
-3. Edit the `.env` file and `config.json` file to configure your parameters.
+3. Edit the `.env` file and `config.json` file to configure your parameters. Note that the `- SIGNUPS_ALLOWED=false` variable is set to `false`, you need to change this to `true` in order to create admin account and revert back to `false` for security reasons.
 
 4. Generate an authentication token for the admin page. It's recommended to use a long, randomly generated string of characters. You can use the following command to generate a token:
 
