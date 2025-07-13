@@ -46,6 +46,12 @@ This repository provides a Docker Compose configuration for setting up a self-ho
 
 It's heavily recommended to activate HTTPS before enabling the admin page to avoid possible MITM attacks.
 
+##Enabling admin page
+
+Refer this page to hash your 'admin_token'  
+
+- [Enabling admin page](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page#secure-the-admin_token)
+
 ## Additional Resources
 
 - [Vaultwarden GitHub Repository](https://github.com/dani-garcia/vaultwarden)
