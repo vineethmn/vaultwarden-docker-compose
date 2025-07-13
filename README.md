@@ -1,7 +1,5 @@
 # vaultwarden-docker-compose
 
-## Introduction
-
 This repository provides a Docker Compose configuration for setting up a self-hosted password manager using [Vaultwarden](https://github.com/dani-garcia/vaultwarden), a compatible server for the Bitwarden password manager.
 
 ## Features
@@ -46,7 +44,7 @@ This repository provides a Docker Compose configuration for setting up a self-ho
 
 It's heavily recommended to activate HTTPS before enabling the admin page to avoid possible MITM attacks.
 
-##Enabling admin page
+## Enabling admin page
 
 Refer this page to hash your 'admin_token'  
 
