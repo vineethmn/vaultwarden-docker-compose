@@ -1,4 +1,3 @@
-version: "3"
 services:
   vaultwarden:
     image: vaultwarden/server:latest
